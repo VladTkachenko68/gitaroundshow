@@ -33,7 +33,7 @@ function Model() {
             rotation={[-Math.PI / 2, 0, 0]}
             scale={100}
           >
-            {/* <meshPhongMaterial color="#c0c0c0" /> */}
+            <meshPhongMaterial color="#c0c0c0" />
           </skinnedMesh>
         {/* </Scroll>
       </ScrollControls> */}
