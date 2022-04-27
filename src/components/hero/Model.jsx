@@ -7,12 +7,9 @@ import { ScrollControls, Sky, useScroll } from '@react-three/drei'
 function Model() {
     const scroll = useScroll()  
   useFrame((state, delta) => {
-    const offset = 1 - scroll.offset
-    // state.camera.position.set(Math.sin(offset) * -10, Math.atan(offset * Math.PI * 2) * 5, Math.cos((offset * Math.PI) / 3) * -10);
-    state.camera.position.set(Math.sin(offset) * -10, Math.atan(offset * Math.PI * 2) * 5, Math.cos((offset * Math.PI) / 3) * -10);
-    // state.camera.rotation.set(Math.sin(30 / 8) * Math.PI);
-    // Math.sin(clock.getElapsedTime() / 8) * Math.PI
-    state.camera.lookAt(0, 0, 0);
+    const offset = scroll.offset
+    state.camera.position.set(Math.sin(offset * 4) * 10, Math.atan(offset * Math.PI * 2) * 4, Math.cos(offset * Math.PI) * -10)
+    state.camera.lookAt(0, 1, 0)
   })
 
   const { nodes, animations, materials } = useGLTF("/1.gltf");
