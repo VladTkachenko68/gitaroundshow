@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <>
       <div className="vapor_hero_container">
-        <div className="vapor_video">
+        <div className="vapor_video" >
           <Canvas camera={{ position: [2, 2.5, 10.5], fov: 50 }}>
             <ambientLight />
             <directionalLight

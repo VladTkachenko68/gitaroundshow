@@ -25,18 +25,15 @@ function Model() {
   return (
     <group ref={ref} dispose={null} rotation={[Math.PI / 2, 0, 0]} scale={0.05}>
       <primitive object={nodes.mixamorigHips} />
-
-      {/* <ScrollControls pages={0}>
-        <Scroll> */}
           <skinnedMesh
             castShadow
             receiveShadow
             geometry={nodes.CC_Base_Body.geometry}
             skeleton={nodes.CC_Base_Body.skeleton}
             rotation={[-Math.PI / 2, 0, 0]}
-            scale={10}
+            scale={100}
           >
-            <meshPhongMaterial color="#c0c0c0" />
+            {/* <meshPhongMaterial color="#c0c0c0" /> */}
           </skinnedMesh>
         {/* </Scroll>
       </ScrollControls> */}
