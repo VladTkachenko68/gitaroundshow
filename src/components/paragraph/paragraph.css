@@ -1,0 +1,29 @@
+.vapor_paragraph {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  color: #b2b2b2;
+  align-self: stretch;
+  margin: 16px 0px;
+}
+
+@media screen and (max-width: 1200px) {
+  .vapor_paragraph {
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .vapor_paragraph {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .vapor_paragraph {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}

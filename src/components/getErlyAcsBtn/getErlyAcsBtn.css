@@ -1,0 +1,38 @@
+.big-button {
+  width: 100%;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 17px;
+  background: #fff;
+  border: 2px solid #fff;
+  color: #000;
+  cursor: pointer;
+  outline: none;
+  border-radius: 50px;
+  width: fit-content;
+  padding: 15px 30px;
+}
+
+@media screen and (max-width: 840px) {
+  .big-button {
+    font-size: 15px;
+    border-radius: 50px;
+    padding: 12px 24px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .big-button {
+    font-size: 12px;
+    border-radius: 50px;
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .big-button {
+    font-size: 12px;
+    border-radius: 50px;
+    padding: 8px 16px;
+  }
+}
