@@ -1,7 +1,7 @@
 import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { ContactShadows } from "@react-three/drei";
-import { ScrollControls, Sky, useScroll, useGLTF, useAnimations,PresentationControls } from '@react-three/drei'
+import { ScrollControls,PresentationControls } from '@react-three/drei'
 import "./hero.css";
 import "./heroSmSc.css";
 import Model from "./Model";
@@ -21,17 +21,17 @@ const Hero = () => {
             />
             <group position={[0, -4.5, 0]}>
               <Suspense fallback={null}>
-                <ScrollControls pages={5}>
-                  {/* <LittlestTokyo scale={0.02} position={[0, 2.5, 0]} /> */}
+                <ScrollControls pages={3}>
                   <PresentationControls
                   global
-                  zoom={4}
+                  zoom={1}
                   config={{ mass: 2, tension: 500 }}
                   snap={{ mass: 4, tension: 1500 }}
                   rotation={[0, 10, 0]}
                   polar={[-Math.PI / 3, Math.PI / 3]}
                   azimuth={[-Math.PI / 1.4, Math.PI / 2]}>
-                  <Model scale={0.1} position={[0, 10, 0]} rotation={[0, 1, 0]}/>
+                  <Model scale={3} position={[0, 0, 0]} rotation={[0, 5, 0]}/>
+                  <spotLight position={[50, 50, -30]} castShadow />
                   </PresentationControls>
                 </ScrollControls>
               </Suspense>
