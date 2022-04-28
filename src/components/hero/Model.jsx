@@ -9,7 +9,7 @@ function Model() {
   useFrame((state, delta) => {
     const offset = scroll.offset
     state.camera.position.set(Math.sin(offset * 4) * 10, Math.atan(offset * Math.PI * 2) * 4, Math.cos(offset * Math.PI) * -10)
-    state.camera.lookAt(0, 1, 0)
+    state.camera.lookAt(0, Math.atan(offset * Math.PI * 2) * 1, Math.cos(offset * Math.PI) * -4)
   })
 
   const { nodes, animations, materials } = useGLTF("/1.gltf");

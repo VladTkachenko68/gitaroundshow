@@ -115,3 +115,139 @@
     font-size: 13px;
   }
 }
+.experience-item {
+  position: absolute;
+}
+.div1 {
+  background-color: red;
+  height: 400px;
+  width: 100%;
+}
+
+.div2 {
+  background-color: green;
+  height: 400px;
+  width: 100%;
+}
+
+.div3 {
+  background-color: blue;
+  height: 400px;
+  width: 100%;
+}
+.topSpacing {
+  height: 500px;
+  margin: 10%;
+  font-size: 40px;
+  background-color: grey;
+}
+canvas {
+  z-index: 9!important;
+
+  /*background-color: lightgreen;*/
+}
+.floattext {
+  position: relative;
+  left: 2000px;
+}
+
+.scroll {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  overflow: hidden;
+}
+
+#root {
+  overflow: auto;
+}
+
+.scroll {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-top: 300px;
+  overflow-y: auto;
+  scroll-snap-type: y proximity;
+  z-index: 0!important;
+}
+
+.scroll > div {
+  scroll-snap-align: start;
+}.caption {
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 80px;
+  color: white;
+  font-size: 8em;
+  font-weight: 100;
+  line-height: 1em;
+  font-variant-numeric: tabular-nums;
+  -webkit-font-smoothing: auto;
+}
+
+.dot {
+  pointer-events: none;
+  position: sticky;
+  top: 0px;
+  display: inline-block;
+  max-width: 600px;
+  padding: 0;
+  padding: 80px;
+  color: #a0a0a0;
+  line-height: 1.6em;
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  text-align: justify;
+}
+
+.dot > h1 {
+  -webkit-font-smoothing: auto;
+  pointer-events: none;
+  color: white;
+  font-size: 5em;
+  font-weight: 100;
+  line-height: 1em;
+  margin: 0;
+  margin-bottom: 0.25em;
+}
+
+@media only screen and (max-width: 1000px) {
+  .caption {
+    font-size: 4em;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .caption {
+    font-size: 3em;
+  }
+  .dot > h1 {
+    font-size: 3em;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .caption {
+    font-size: 2em;
+  }
+  .dot > h1 {
+    font-size: 3em;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .caption {
+    font-size: 1em;
+  }
+  .dot > h1 {
+    font-size: 3em;
+  }
+}
+canvas {
+  pointer-events:auto;
+}
