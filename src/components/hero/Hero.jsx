@@ -66,7 +66,7 @@ function Hero() {
           <div className="canvas-above">
             <div className="texteffectRight">
               <Fade
-                when={scrollTop >= 1000 && scrollTop <= 1500}
+                when={scrollTop >= 1800 && scrollTop <= 2500}
                 duration={2000}
                 bottom>
                 <RightText />
