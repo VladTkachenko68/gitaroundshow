@@ -1,7 +1,8 @@
 .section__padding {
-  padding: 0 4rem;
-  max-width: 1440px;
-  margin: 0 auto;
+  /* padding: 0 4rem; */
+  /* max-width: 1440px; */
+  /* margin: 0 auto; */
+  margin-top: 0!important;
 }
 
 @media screen and (max-width: 1000px) {
