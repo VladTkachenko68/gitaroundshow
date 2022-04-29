@@ -202,14 +202,14 @@
   line-height: 1.6em;
   font-size: 9px;
   letter-spacing: 1.5px;
-  text-align: justify;
+  text-align: left;
 }
 
-.dot > h1 {
+.dot > h3 {
   -webkit-font-smoothing: auto;
   pointer-events: none;
   color: white;
-  font-size: 5em;
+  font-size: 2em;
   font-weight: 100;
   line-height: 1em;
   margin: 0;
@@ -226,7 +226,7 @@
   .caption {
     font-size: 3em;
   }
-  .dot > h1 {
+  .dot > h3 {
     font-size: 3em;
   }
 }
@@ -235,7 +235,7 @@
   .caption {
     font-size: 2em;
   }
-  .dot > h1 {
+  .dot > h3 {
     font-size: 3em;
   }
 }

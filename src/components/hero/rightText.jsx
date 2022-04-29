@@ -2,10 +2,8 @@ const rightText = () => {
     return (
         <>
             <div className="dot">
-                <h1>RUN THE <br />HAPEWALK</h1>
-                Take to the runaway and show off Your collection. Become a HAPEFLUENCER and read the real-world reward.
-            </div>
-        </>
+                <h3>An NFT marketplate of Digital fashion pieces curated and inspired by Articles, Graphi Designers, Influencers and Celebrities. </h3>
+            </div> </>
     )
 }
 export default rightText;
