@@ -259,12 +259,12 @@ canvas {
   top: 300px;
 }
 .texteffectRight {
-  position: absolute;
-  top: 900px;
+  position: fixed;
+  top: 35%;
 }
 .texteffectLeft {
-  position: absolute;
-  top: 600px;
+  position: fixed;
+  top: 35%;
   right: 0;
 }
 .canvas-above {

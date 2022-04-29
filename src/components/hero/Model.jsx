@@ -8,7 +8,7 @@ import LeftText from "./leftText";
 function Model(props) {
   const scroll = useScroll()
   useFrame((state, delta) => {
-    state.camera.position.set(Math.sin((props.dataParentToChild/3000)  * 4) * 10, Math.atan((props.dataParentToChild/3000)  * Math.PI * 2) * 4, Math.cos((props.dataParentToChild/3000)  * Math.PI) * -10)
+    state.camera.position.set(Math.sin((props.dataParentToChild/4000)  * 4) * 10, Math.atan((props.dataParentToChild/4000)  * Math.PI * 2) * 4, Math.cos((props.dataParentToChild/4000)  * Math.PI) * -10)
     state.camera.lookAt(0, 1, 0)
   })
 
@@ -34,7 +34,7 @@ function Model(props) {
           rotation={[-Math.PI / 2, 0, 0]}
           scale={100}
         >
-          <meshPhongMaterial color="#242424" emissive="#000000" specular="#4c4343" shininess={90} fog={true} reflectivity="1" refractionRatio={1} combine={THREE.MultiplyOperation} />
+          {/* <meshPhongMaterial color="#242424" emissive="#000000" specular="#4c4343" shininess={90} fog={true} reflectivity="1" refractionRatio={1} combine={THREE.MultiplyOperation} /> */}
         </skinnedMesh>
       </group>
     </>

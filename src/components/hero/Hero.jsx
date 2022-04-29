@@ -64,14 +64,14 @@ function Hero() {
           <div className="canvas-above">
             <div className="texteffectRight">
               {
-                (scrollTop >= 600 && scrollTop <= 700) ? <Fade bottom>
+                (scrollTop >= 1000 && scrollTop <= 2000) ? <Fade duration={3000} bottom>
                   <RightText />
                 </Fade> : null
               }
             </div>
             <div className="texteffectLeft">
               {
-                (scrollTop >= 300 && scrollTop <= 400) ? <Fade bottom>
+                (scrollTop >= 300 && scrollTop <= 800) ? <Fade duration={3000} bottom>
                   <LeftText />
                 </Fade> : null
               }
