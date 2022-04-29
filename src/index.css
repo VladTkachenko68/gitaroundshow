@@ -47,7 +47,7 @@ code {
   height: 100%;
   margin: 0;
   padding: 0;
-  overflow: auto;
+  overflow: hidden;
 }
 html,
 body,
@@ -61,7 +61,7 @@ body,
   overflow: hidden;
 }
 #root {
-  overflow: auto;
+  overflow: hidden;
 }
 
 .scroll {

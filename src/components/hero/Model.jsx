@@ -34,7 +34,7 @@ function Model(props) {
           rotation={[-Math.PI / 2, 0, 0]}
           scale={100}
         >
-          <meshPhongMaterial color="#242424" emissive="#000000" specular="#4c4343" shininess={90} fog={true} reflectivity="1" refractionRatio={1} combine={THREE.MultiplyOperation} />
+          {/* <meshPhongMaterial color="#242424" emissive="#000000" specular="#4c4343" shininess={90} fog={true} reflectivity="1" refractionRatio={1} combine={THREE.MultiplyOperation} /> */}
         </skinnedMesh>
       </group>
     </>
