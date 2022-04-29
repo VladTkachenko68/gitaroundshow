@@ -13,6 +13,8 @@ import "./heroSmSc.css";
 function Hero() {
   const myRef = useRef(null)
   const scroll = useRef(0)
+  // const [effectRight, seteffectRight] = useState(texteffectRight);
+  // const [effectLeft, seteffectLeft] = useState(texteffectLeft);
   const [scrollTop, setHeight] = useState(0)
   const onScroll = () => {
     const scrollY = window.scrollY //Don't get confused by what's scrolling - It's not the window
@@ -63,18 +65,20 @@ function Hero() {
           </div>
           <div className="canvas-above">
             <div className="texteffectRight">
-              {
-                (scrollTop >= 1000 && scrollTop <= 2000) ? <Fade duration={3000} bottom>
-                  <RightText />
-                </Fade> : null
-              }
+              <Fade
+                when={scrollTop >= 1000 && scrollTop <= 1500}
+                duration={2000}
+                bottom>
+                <RightText />
+              </Fade>
             </div>
             <div className="texteffectLeft">
-              {
-                (scrollTop >= 300 && scrollTop <= 800) ? <Fade duration={3000} bottom>
-                  <LeftText />
-                </Fade> : null
-              }
+              <Fade
+                when={scrollTop >= 300 && scrollTop <= 800}
+                duration={2000}
+                bottom>
+                <LeftText />
+              </Fade>
             </div>
           </div>
         </div>

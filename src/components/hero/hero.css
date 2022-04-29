@@ -262,11 +262,27 @@ canvas {
   position: fixed;
   top: 35%;
 }
+
 .texteffectLeft {
   position: fixed;
   top: 35%;
   right: 0;
 }
+/* .texteffectLeft {
+  position: fixed;
+  top: 45%;
+  right: 0;
+} */
+/* .texteffectRightdelay {
+  position: fixed;
+  top: 45%;
+}
+.texteffectLeftdelay {
+  position: fixed;
+  top: 45%;
+  right: 0;
+} */
+
 .canvas-above {
   width: 100%;
   z-index: 9!important;
