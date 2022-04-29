@@ -141,11 +141,6 @@
   font-size: 40px;
   background-color: grey;
 }
-canvas {
-  z-index: 9!important;
-
-  /*background-color: lightgreen;*/
-}
 .floattext {
   position: relative;
   left: 2000px;
@@ -249,5 +244,11 @@ canvas {
   }
 }
 canvas {
-  pointer-events:auto;
+  /* pointer-events:auto; */
+}
+.ghost {
+  width: 100%;
+  position: absolute;
+  /* overflow: hidden; */
+  top: 300px;
 }

@@ -18,10 +18,7 @@ const Home = () => {
   return (
     <Container style={{ marginTop: 80 }}>
       <Hero />
-      {/* <Marketplace />
-      <Token />
-      <Roadmap /> */}
-    </Container>
+    </Container>  
   );
 };
 

@@ -29,7 +29,7 @@ const data = [
 ];
 const Footer = () => {
   return (
-    <Container>
+    // <Container>
       <div className="footer_container">
         <div></div>
         <div className="footerLinks">
@@ -47,7 +47,7 @@ const Footer = () => {
           ))}
         </div>
       </div>
-    </Container>
+    // </Container>
   );
 };
 
