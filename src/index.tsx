@@ -4,13 +4,16 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import Loader from "./components/loader/Loader";
+import SmoothScroll from "./scrollsmooth";
 
 ReactDOM.render(
-  <Suspense fallback={<Loader />}>
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
-  </Suspense>,
+  <SmoothScroll>
+    <Suspense fallback={<Loader />}>
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>
+    </Suspense>
+  </SmoothScroll>,
   document.getElementById("root")
 );
 reportWebVitals();

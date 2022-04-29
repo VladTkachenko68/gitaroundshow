@@ -8,7 +8,7 @@ import LeftText from "./leftText";
 function Model(props) {
   const scroll = useScroll()
   useFrame((state, delta) => {
-    state.camera.position.set(Math.sin((props.dataParentToChild/1000)  * 4) * 10, Math.atan((props.dataParentToChild/1000)  * Math.PI * 2) * 4, Math.cos((props.dataParentToChild/1000)  * Math.PI) * -10)
+    state.camera.position.set(Math.sin((props.dataParentToChild/3000)  * 4) * 10, Math.atan((props.dataParentToChild/3000)  * Math.PI * 2) * 4, Math.cos((props.dataParentToChild/3000)  * Math.PI) * -10)
     state.camera.lookAt(0, 1, 0)
   })
 
