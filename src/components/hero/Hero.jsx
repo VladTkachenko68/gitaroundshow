@@ -46,9 +46,12 @@ function Hero() {
                     config={{ mass: 2, tension: 500 }}
                     snap={{ mass: 4, tension: 1500 }}
                     rotation={[0, 10, 0]}
-                    polar={[-Math.PI / 3, Math.PI / 3]}
+                    polar={[-Math.PI / 3, Math.PI / 3]} 
                     azimuth={[-Math.PI / 1.4, Math.PI / 2]}>
-                    <Model scale={0.1} position={[0, 10, -10]} rotation={[0, 1, 0]} scroll={scroll} dataParentToChild = {scrollTop}/>
+                    <Model scale={0.1} position={[0, 10, -10]} rotation={[0, 1, 0]} scroll={scroll} dataParentToChild = {scrollTop/4000
+                  
+                  
+                  }/>
                   </PresentationControls>
                 </Suspense>
               </group>
